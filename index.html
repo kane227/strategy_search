@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>策略查询</title>
+    <link href="layui/css/layui.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" href="lib/index.css">
+</head>
+
+<body>
+    <div id="noTableDiv">
+        <div id="strategyBox">查询条件：</div>
+        <div class="searchBox">
+            <input class="simpleSearchInput" type="text" placeholder="Search...">
+            <a href="javascript:;" class="simpleSearchBtn">
+				<i class="layui-icon"></i></a>
+            <div class="strategySearchBox">
+                <a href="javascript:;">
+					<i class="layui-icon layui-icon-templeate-1"></i></a>
+                <a href="javascript:;">
+					<i class="layui-icon layui-icon-triangle-d"></i></a>
+            </div>
+        </div>
+        <table class="layui-hide" id="listTable" lay-filter="listMainTable"></table>
+        <ul id="dynamicCondition" style="display:none;">
+            <li field="Layuiex.id" title="id" edit="text" layVerify="number"></li>
+            <li field="Layuiex.name" title="姓名" edit="text" layVerify=""></li>
+            <li field="Layuiex.sex" title="性别" edit="select" layVerify="number" templet="#dict-sex"></li>
+            <li field="Layuiex.birthday" title="生日" edit="date" layVerify=""></li>
+            <li field="Layuiex.phone" title="手机号码" edit="text" layVerify=""></li>
+            <li field="Layuiex.email" title="邮箱" edit="text" layVerify=""></li>
+        </ul>
+        <div style="display:none;">
+            <select id='dict-sex' name='sex' lay-verify='' lay-search=''>
+                <option value=""></option>
+                <option value="1">男</option>
+                <option value="0">女</option>
+            </select>
+        </div>
+</body>
+<script src="lib/data.js"></script>
+<script src="layui/layui.js"></script>
+<script src="lib/index.js"></script>
+<script src="lib/index.js"></script>
+
+</html>

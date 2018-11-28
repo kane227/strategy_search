@@ -1,0 +1,61 @@
+#strategyBox {
+    height: 30px;
+    line-height: 30px;
+    width: calc(100% - 260px);
+    display: inline-block;
+}
+
+div.searchBox {
+    padding: 0;
+    float: right;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+    box-sizing: border-box;
+}
+
+div.searchBox input.simpleSearchInput {
+    float: left;
+    border: none;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 65px 0 5px;
+}
+
+div.searchBox a.simpleSearchBtn {
+    height: 28px;
+    line-height: 28px;
+    border: none;
+    margin: 0;
+    padding: 0 5px;
+    position: absolute;
+    right: 36px;
+}
+
+div.searchBox div.strategySearchBox {
+    margin-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    right: 0;
+}
+
+div.searchBox div.strategySearchBox a {
+    height: 28px;
+    line-height: 28px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+div.searchBox div.strategySearchBox a:last-child {
+    margin-left: -5px;
+}
+
+div.searchBox div.strategySearchBox a:last-child i {
+    font-size: 12px;
+}
+
+div.layui-table-view {
+    margin: 0;
+}
